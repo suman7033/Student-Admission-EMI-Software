@@ -9,7 +9,7 @@ const PortalAdmission = () => {
         <label className='font-semibold px-4 text-robot text-base'>Portal Admission</label>
         </div>
         <div className='flex items-center mt-8'>
-          <lable className="font-bold px-4 text-2xl text-[#1ACA0A]">63782</lable>
+          <lable className="font-bold px-4 text-xl text-[#1ACA0A]">63782</lable>
           <img src={PortalIcon} className='pl-24'/>
         </div>
       </div>

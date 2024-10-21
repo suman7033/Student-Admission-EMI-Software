@@ -37,8 +37,7 @@ const options = {
 // PerformanceChart component rendering the Bar chart
 const PerformanceChart = () => {
   return (
-    <div className='w-full'> 
-       <div className='mr-2 py-2 font-bold text-left mx-6 h-56 rounded-xl bg-white border border-[#eae1e1] border-spacing-8'>
+       <div className='w-full mr-2 py-2 font-bold text-left mx-6 h-56 rounded-xl bg-white border border-[#eae1e1] border-spacing-8'>
        <label className='text-lg px-5'>Performance</label>
 
         <div className='h-48 px-5 py-3'>
@@ -46,7 +45,6 @@ const PerformanceChart = () => {
           <Bar data={data} options={options} />
         </div>
        </div>
-    </div>
   )
 }
 

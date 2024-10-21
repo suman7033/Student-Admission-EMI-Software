@@ -9,7 +9,7 @@ const TotalAdmission = () => {
         <label className='text-[#000000] text-robot text-base font-semibold px-4'>Total Admission</label>
         </div>
         <div className='flex mt-7 ml-1'>
-          <lable className="font-bold px-4 text-2xl text-[#1ACA0A]">63782</lable>
+          <lable className="font-bold px-4 text-xl text-[#1ACA0A]">63782</lable>
           <img src={TotalAIcon} className='pl-20'/>
         </div>
       </div>

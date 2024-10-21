@@ -9,8 +9,8 @@ const TotalRevenue = () => {
         <label className='text-robot text-base font-semibold px-4'>Total Revenue</label>
         </div>
         <div className='flex items-center mt-8'>
-          <lable className="font-bold px-3 text-2xl text-[#1ACA0A]">63782</lable>
-          <img src={Tranding} className='px-24'/>
+          <lable className="font-bold px-3 text-xl text-[#1ACA0A]">63782</lable>
+          <img src={Tranding} className='pl-28'/>
         </div>
       </div>
     </div>

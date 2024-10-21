@@ -10,8 +10,8 @@ import DashboardSmallChart from './DashboardCharts/DashboardSmallChart'
 
 const Dashboard = () => {
   return (
-    <div className=' ml-4 overflow-hidden'>
-        <div className=' flex gap-10'>
+    <div className=' mt-[-35.3rem] ml-72 overflow-hidden'>
+        <div className=' flex gap-8'>
           <TotalAdmission/>
           <Pending/>
           <PortalAdmission/>

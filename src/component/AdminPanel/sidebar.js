@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Import Link
 import Academilcon from "../img/AcademyIcon.png";
 import Chart from "../img/Chart.png";
 import Admission from "../img/Vector.png";
@@ -23,38 +24,38 @@ const Sidebar = () => {
   const hoverClass = 'hover:bg-gray-200';  // Hover effect styles
 
   return (
-    <div className='px-0 w-full'>
-      <div className='w-64 rounded-l-2xl border bg-[#FFFFFF] h-screen'>
+    <div className=' w-full'>
+      <div className='w-64 rounded-l-2xl border bg-[#FFFFFF]'>
         <div className='px-8 py-4'>
           <img src={Academilcon} alt="Academy Icon" />
         </div>
 
         {/* Dashboard */}
-        <div
+        <Link to="/dashboard"  // Use Link with 'to' prop
           className={`${itemClass} ${activeItem === 'dashboard' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('dashboard')}
         >
           <img className="bg-[#101112]" src={Chart} alt="Chart Icon" />
           <label className='cursor-pointer font-bold ml-3'>Dashboard</label>
-        </div>
+        </Link>
 
         {/* Admission List */}
-        <div
+        <Link to="/admission_form"
           className={`${itemClass} ${activeItem === 'admission' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('admission')}
         >
           <img src={Admission} alt="Admission Icon" />
           <label className='cursor-pointer font-bold ml-3'>Admission List</label>
-        </div>
+        </Link>
 
         {/* Student ID Card */}
-        <div
+        <Link to="/student"
           className={`${itemClass} ${activeItem === 'student' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('student')}
         >
           <img src={Student} alt="Student Icon" />
           <label className='cursor-pointer font-bold ml-3'>Student ID Card</label>
-        </div>
+        </Link>
 
         {/* Maintenance */}
         <div className='px-8 py-1 my-1 font-semibold'>
@@ -62,49 +63,49 @@ const Sidebar = () => {
         </div>
 
         {/* Team List */}
-        <div
+        <Link to="/team"
           className={`${itemClass} ${activeItem === 'team' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('team')}
         >
           <img src={TeamIcon} alt="Team Icon" />
           <label className='cursor-pointer font-bold ml-3'>Team List</label>
-        </div>
+        </Link>
 
         {/* Source List */}
-        <div
+        <Link to="/source"
           className={`${itemClass} ${activeItem === 'source' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('source')}
         >
           <img src={SourceIcon} alt="Source Icon" />
           <label className='cursor-pointer font-bold ml-3'>Source List</label>
-        </div>
+        </Link>
 
         {/* Course List */}
-        <div
+        <Link to="/course"
           className={`${itemClass} ${activeItem === 'course' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('course')}
         >
           <img src={CourseIcon} alt="Course Icon" />
           <label className='cursor-pointer font-bold ml-3'>Course List</label>
-        </div>
+        </Link>
 
         {/* Branch List */}
-        <div
+        <Link to="/branch"
           className={`${itemClass} ${activeItem === 'branch' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('branch')}
         >
           <img src={BranchIcon} alt="Branch Icon" />
           <label className='cursor-pointer font-bold ml-3'>Branch List</label>
-        </div>
+        </Link>
 
         {/* City List */}
-        <div
+        <Link to="/city"
           className={`${itemClass} ${activeItem === 'city' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('city')}
         >
           <img src={CityIcon} alt="City Icon" />
           <label className='cursor-pointer font-bold ml-3'>City List</label>
-        </div>
+        </Link>
 
         {/* Promotional */}
         <div className='px-8 py-0 my-1 font-semibold'>
@@ -112,22 +113,22 @@ const Sidebar = () => {
         </div>
 
         {/* WhatsApp */}
-        <div
+        <Link to="/whatsapp"
           className={`${itemClass} ${activeItem === 'whatsapp' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('whatsapp')}
         >
           <img src={WhatsAppIcon} alt="WhatsApp Icon" />
           <label className='cursor-pointer font-bold ml-3'>WhatsApp</label>
-        </div>
+        </Link>
 
         {/* Mail List */}
-        <div
+        <Link to="/mail"
           className={`${itemClass} ${activeItem === 'mail' ? activeClass : hoverClass}`}
           onClick={() => handleItemClick('mail')}
         >
           <img src={CityIcon} alt="Mail Icon" />
           <label className='cursor-pointer font-bold ml-3'>Mail List</label>
-        </div>
+        </Link>
       </div>
     </div>
   );

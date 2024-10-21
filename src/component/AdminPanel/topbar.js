@@ -23,9 +23,6 @@ const Topbar = () => {
       </div>
       </div>
 
-    <div className='mt-7'>
-      <Dashboard/>
-    </div>
     </div>
   );
 }

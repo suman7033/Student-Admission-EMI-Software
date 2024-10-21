@@ -9,7 +9,7 @@ const Pending = () => {
         <label className='text-robot text-base font-semibold px-3'>Pending For Approval</label>
         </div>
         <div className='flex items-center mt-7'>
-          <lable className="font-bold px-3 text-2xl text-[#1ACA0A]">782</lable>
+          <lable className="font-bold px-3 text-xl text-[#1ACA0A]">782</lable>
           <img src={PendingIcon} className='pl-32 mt-2'/>
         </div>
       </div>
