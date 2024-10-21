@@ -24,7 +24,7 @@ const Sidebar = () => {
 
   return (
     <div className='px-0 w-full'>
-      <div className='w-56 rounded-l-2xl border bg-[#FFFFFF] h-screen'>
+      <div className='w-64 rounded-l-2xl border bg-[#FFFFFF] h-screen'>
         <div className='px-8 py-4'>
           <img src={Academilcon} alt="Academy Icon" />
         </div>

@@ -7,11 +7,11 @@ import VisitorChart from './VisitorChart'
 const DashboardSmallChart = () => {
   return (
     <div className=''>
-      <div className='flex gap-12'>
+      <div className='flex gap-6'>
         <DealChart/>
         <RateChart/>
       </div>
-      <div className='flex gap-12'>
+      <div className='flex gap-6'>
         <VisitorChart/>
         <ApplicationChart/>
       </div>
