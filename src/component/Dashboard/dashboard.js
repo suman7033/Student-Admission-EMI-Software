@@ -13,11 +13,11 @@ const Dashboard = () => {
   const isSidebarOpen = useSelector((state) => state.sidebar.isOpen); // Access the sidebar state from Redux
 
   const dashboardMargin = isSidebarOpen ? 'ml-60' : 'ml-20'; // Dynamically adjust the margin
-  const chartGap = isSidebarOpen ? 'gap-5' : 'gap-16'; // Correctly set the gap utility
-
+  const chartGap = isSidebarOpen ? 'gap-5' : 'gap-12'; // Correctly set the gap utility
+  const divgap = isSidebarOpen ? "gap-12":'gap-24';
   return (
     <div className={`mt-[-35.3rem] overflow-hidden transition-all duration-300 ${dashboardMargin}`}>
-      <div className='flex gap-12'>
+      <div className={`flex ${divgap}`}>
         <TotalAdmission />
         <Pending />
         <PortalAdmission />
@@ -29,7 +29,7 @@ const Dashboard = () => {
         <PerformanceChart />
       </div>
 
-      <div className='flex mt-2 gap-11'>
+      <div className={`flex mt-2 ${chartGap}`}>
         <PaymentChart />
         <DashboardSmallChart />
       </div>
