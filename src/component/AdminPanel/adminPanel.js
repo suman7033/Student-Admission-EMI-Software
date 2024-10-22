@@ -1,25 +1,17 @@
-import React from 'react'
-import Sidebar from './sidebar'
-import Topbar from './topbar'
-import Dashboard from '../Dashboard/dashboard'
- 
-const adminPanel = () => {
-  return (
-    <div>
-        <div className=' flex bg-[#f6f7f8] min-h-screen'>
-       <div className='w-64'>
-       <Sidebar/>
-       </div>
-       <div className='w-screen'>
-       <Topbar/>
-       </div>
-    </div>
-    {/* <div>
-      <Dashboard/>
-    </div> */}
-    </div>
-     
-  )
-}
+// adminPanel.js
+import React from 'react';
+import Sidebar from './sidebar';
+import Topbar from './topbar';
 
-export default adminPanel;
+const AdminPanel = () => {
+  return (
+    <div className='flex bg-[#f6f7f8] min-h-screen'>
+      <Sidebar />
+      <div className='w-full'>
+        <Topbar />
+      </div>
+    </div>
+  );
+};
+
+export default AdminPanel;
