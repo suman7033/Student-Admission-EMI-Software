@@ -12,6 +12,7 @@ import CourseIcon from "../img/CourseIcon.png";
 import BranchIcon from "../img/BranchIcon.png";
 import CityIcon from "../img/CityIcon.png";
 import WhatsAppIcon from "../img/whatsappIcon.png";
+import thexlacademy_logo from "../img/thexlacademy_logo.jpg";
 
 const Sidebar = () => {
   const dispatch = useDispatch();
@@ -21,8 +22,8 @@ const Sidebar = () => {
   const sidebarWidth = isOpen ? 'w-64' : 'w-16';  // Dynamic sidebar width
   const labelClass = isOpen ? 'ml-3 cursor-pointer' : 'hidden';  // Show/hide labels based on sidebar state
   const itemClass = 'cursor-pointer flex items-center px-4 py-2 my-2 rounded-lg';
-  const hoverClass = isOpen ? 'hover:bg-[#637D9B]' : 'active:bg-[#637D9B] h-12 pb-5';  // Hover effect
-
+  const hoverClass = isOpen ? 'hover:bg-[#637D9B] hover:text-white' : 'active:bg-[#637D9B] h-12 pb-5';  // Hover effect
+  
   // Handler for setting the top bar title and active section
   const handleSetAdmissionTitles = (admissionFormTitle, addNewAdmissionTitle = '', activeSection) => {
     dispatch(setAdmissionTitles({ admissionForm: admissionFormTitle, addNewAdmission: addNewAdmissionTitle }));
@@ -30,10 +31,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`transition-all duration-300 bg-white ${sidebarWidth} h-screen`}>
+    <div className={`max-h-screen shadow-md transition-all duration-300 bg-white ${sidebarWidth}`}>
       {/* Academy Icon at the top */}
       <div className='px-4 py-4'>
-        <img src={Academilcon} alt="Academy Icon" />
+        <img src={isOpen ? Academilcon : thexlacademy_logo} alt="Academy Icon" />
       </div>
 
       {/* Dashboard Link */}
@@ -48,21 +49,21 @@ const Sidebar = () => {
 
       {/* Admission List Link */}
       <Link
-        to="/admission_form"
+        to="/admission_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Admission Form' ? 'bg-gray-300' : ''}`}
-        onClick={() => handleSetAdmissionTitles('Admission Form', 'Add New Admission', 'Admission Form')}
+        onClick={() => handleSetAdmissionTitles('Admission List', 'Add New Admission', 'Admission Form')}
       >
-        <img className={`${!isOpen ? 'mt-4' : ''}`} src={Admission} alt="Admission Icon" />
+        <img className={` ${!isOpen ? 'mt-4' : ''}`} src={Admission} alt="Admission Icon" />
         <label className={`font-bold ${labelClass}`}>Admission List</label>
       </Link>
 
       {/* Student ID Card Link */}
       <Link
-        to="/student"
+        to="/student_id_card_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Student ID Card' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Student ID Card', 'Add Admission', 'Student ID Card')}
       >
-        <img className={`${!isOpen ? 'mt-4' : ''}`} src={Student} alt="Student Icon" />
+        <img className={`${!isOpen ? 'mt-4' : ''} `} src={Student} alt="Student Icon" />
         <label className={`font-bold ${labelClass}`}>Student ID Card</label>
       </Link>
 
@@ -75,7 +76,7 @@ const Sidebar = () => {
 
       {/* Team List Link */}
       <Link
-        to="/team"
+        to="/team_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Team List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Team List', 'Add Admission', 'Team List')}
       >
@@ -85,7 +86,7 @@ const Sidebar = () => {
 
       {/* Source List Link */}
       <Link
-        to="/source"
+        to="/source_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Source List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Source List', 'Add Admission', 'Source List')}
       >
@@ -95,7 +96,7 @@ const Sidebar = () => {
 
       {/* Course List Link */}
       <Link
-        to="/course"
+        to="/course_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Course List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Course List', 'Add Admission', 'Course List')}
       >

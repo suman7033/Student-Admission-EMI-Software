@@ -51,11 +51,11 @@ const PaymentChart = () => {
   const marginTop=isSidebarOpen ? "my-2": "my-3";
   const marginLeft=isSidebarOpen ? "ml-4":"ml-20";
   return (
-       <div className={`my-2 py-2 font-bold text-left ${chartWidth} h-[12rem] rounded-xl bg-white border border-[#e0dddd] border-spacing-8`}>
+       <div className={`my-2 py-2 font-bold text-left ${chartWidth} h-[12rem] rounded-xl bg-white shadow-md`}>
         <div className='flex'>
            <label className='text-lg px-5'>Payment</label>
            <div className='ml-64'>
-           <button className={`rounded-md h-8 w-32 ${marginLeft} font-bold text-lg bg-[#a2b3c6]`}>Full Chart</button>
+           <button className={`rounded-md h-8 w-32 ${marginLeft} font-bold text-white text-base bg-[#637D9B]`}>Full Chart</button>
            </div>
         </div>
         
@@ -73,11 +73,11 @@ const PaymentChart = () => {
               <li className={`${marginTop} text-xs`}>#3250 payment due of  (altain chopal)</li>
             </ul>
             <div className=''>
-              <div className='w-28 rounded-md text-center text-sm my-2 mx-1 bg-[#a2b3c6]'>Payment Send</div>
-              <div className='w-28 rounded-md text-center text-sm my-2 mx-1 bg-[#a2b3c6]'>Due</div>
-              <div className='w-28 rounded-md text-center text-sm my-2 mx-1 bg-[#a2b3c6]'>Received</div>
-              <div className='w-28 rounded-md text-center text-sm my-2 mx-1 bg-[#a2b3c6]'>Pending</div>
-              <div className='w-28 rounded-md text-center text-sm my-2 mx-1 bg-[#a2b3c6]'>Received</div>
+              <div className='w-28 rounded-md text-white text-center text-sm my-2 mx-1 bg-[#637D9B]'>Payment Send</div>
+              <div className='w-28 rounded-md text-white text-center text-sm my-2 mx-1 bg-[#637D9B]'>Due</div>
+              <div className='w-28 rounded-md text-white text-center text-sm my-2 mx-1 bg-[#637D9B]'>Received</div>
+              <div className='w-28 rounded-md text-white text-center text-sm my-2 mx-1 bg-[#637D9B]'>Pending</div>
+              <div className='w-28 rounded-md text-white text-center text-sm my-2 mx-1 bg-[#637D9B]'>Received</div>
             </div>
           </div>
         </div>

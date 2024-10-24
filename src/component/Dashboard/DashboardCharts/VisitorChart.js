@@ -40,7 +40,7 @@ const options = {
 const VisitorChart = () => {
   return (
     <div className=''>
-      <div className='flex bg-white border border-[#ded9d9] w-64 h-24 rounded-xl mx-6'>
+      <div className='flex bg-white border shadow-md w-64 h-24 rounded-xl mx-6'>
         <div className="mx-4 h-10 w-44" >
           <Line data={data} options={options}/>
         </div>

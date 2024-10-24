@@ -4,7 +4,7 @@ import TotalAIcon from "../img/TotalAIcon.png";
 const TotalAdmission = () => {
   return (
     <div className='w-60'> 
-      <div className='h-28 mr-2 rounded-xl bg-white border'>
+      <div className='h-28 mr-2 rounded-xl bg-white border shadow-md'>
         <div className='pt-3'> 
         <label className='text-[#000000] text-robot text-base font-semibold px-4'>Total Admission</label>
         </div>

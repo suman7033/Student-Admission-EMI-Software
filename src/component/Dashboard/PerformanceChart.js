@@ -41,7 +41,7 @@ const PerformanceChart = () => {
   const chartWidth = isSidebarOpen ? 'w-[33rem]' : 'w-[38rem]'; // Wider chart when sidebar is open
 
   return (
-    <div className={`overflow-hidden ${chartWidth} mr-2 py-2 font-bold text-left mx-6 h-56 rounded-xl bg-white border border-[#eae1e1] border-spacing-8`}>
+    <div className={`bg-white overflow-hidden ${chartWidth} mr-2 py-2 font-bold text-left mx-6 h-56 rounded-xl shadow-md`}>
       <label className='text-lg px-5'>Performance</label>
 
       <div className='h-48 px-5 py-3'>

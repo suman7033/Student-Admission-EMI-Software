@@ -1,14 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux'; // Import useSelector to access sidebar state
 
-const AdmissionForm = () => {
+const EditAdmissionForm = () => {
   const isOpen = useSelector((state) => state.sidebar.isOpen); // Get sidebar state from Redux
 
   // Set the dynamic margin based on the sidebar's state
   const marginLeft = isOpen ? 'ml-52' : 'ml-12';
+  const marginTop=isOpen ? "mt-[-36.8rem]":"mt-[-36rem]";
+
 
   return (
-    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} mt-[-37.5rem]`}>
+    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} ${marginTop}`}>
       
       {/* Form Content */}
       <div className="bg-white p-3 mb-3 rounded-lg shadow-md">
@@ -118,4 +120,4 @@ const AdmissionForm = () => {
   );
 };
 
-export default AdmissionForm;
+export default EditAdmissionForm;

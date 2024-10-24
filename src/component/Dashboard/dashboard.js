@@ -15,8 +15,9 @@ const Dashboard = () => {
   const dashboardMargin = isSidebarOpen ? 'ml-60' : 'ml-20'; // Dynamically adjust the margin
   const chartGap = isSidebarOpen ? 'gap-5' : 'gap-12'; // Correctly set the gap utility
   const divgap = isSidebarOpen ? "gap-12":'gap-24';
+  const marginTop=isSidebarOpen ? "mt-[-35.3rem]":"mt-[-34.5rem]";
   return (
-    <div className={`mt-[-35.3rem] overflow-hidden transition-all duration-300 ${dashboardMargin}`}>
+    <div className={`${marginTop} overflow-hidden transition-all duration-300 ${dashboardMargin}`}>
       <div className={`flex ${divgap}`}>
         <TotalAdmission />
         <Pending />

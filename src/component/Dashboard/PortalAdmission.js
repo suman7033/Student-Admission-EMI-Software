@@ -4,7 +4,7 @@ import PortalIcon from "../img/PortalIcon.png";
 const PortalAdmission = () => {
   return (
     <div className='w-60'> 
-      <div className=' h-28 rounded-xl bg-white border border-[#eae1e1] border-spacing-8'>
+      <div className=' h-28 rounded-xl shadow-md bg-white border border-[#eae1e1] border-spacing-8'>
         <div className='pt-3'> 
         <label className='font-semibold px-4 text-robot text-base'>Portal Admission</label>
         </div>

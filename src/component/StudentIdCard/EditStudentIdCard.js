@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'; // Import useSelector to access sideb
 import { Link } from 'react-router-dom';
 
 
-const StudentIdCard = () => {
+const EditStudentIdCard = () => {
   const isOpen = useSelector((state) => state.sidebar.isOpen); // Get sidebar state from Redux
   const marginLeft= isOpen ? "ml-52": "ml-12";
   const marginTop=isOpen ? "mt-[-36.8rem]":"mt-[-36rem]";
@@ -107,4 +107,4 @@ const StudentIdCard = () => {
   )
 }
 
-export default StudentIdCard;
+export default EditStudentIdCard;

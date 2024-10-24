@@ -49,7 +49,7 @@ const CoursesPaiChart = () => {
   const chartWidth = isSidebarOpen ? 'w-[33rem]' : 'w-[38rem]'; // Adjusted widths
   const chartGap = isSidebarOpen ? 'gap-10' : 'gap-24'; // Correctly set the gap utility
   return (
-    <div className={`py-2 font-bold border-[#e2dede] text-center ${chartWidth} h-56 rounded-xl bg-white border border-spacing-8`}>
+    <div className={`py-2 font-bold shadow-md text-center ${chartWidth} h-56 rounded-xl bg-white border border-spacing-8`}>
       <label className='text-lg'>Top Courses Purchased</label>
       <div className={`flex ${chartGap}`}>
         {/* Custom legend for the courses */}

@@ -41,7 +41,7 @@ const plugins = [{
 const ApplicationChart = () => {
   return (
     <div>
-      <div className='flex bg-white border border-[#e0d3d3] w-64 h-24 rounded-xl'>
+      <div className='flex bg-white border border-[#e0d3d3] shadow-md w-64 h-24 rounded-xl'>
       <div className='mx-2 my-1 w-20'>
           <Doughnut data={data} plugins={plugins} />
       </div>

@@ -40,7 +40,7 @@ const plugins = [{
 const RateChart = () => {
   return (
     <div>
-      <div className='flex bg-white border border-[#dfdada] w-64 h-24 rounded-xl mx-0 my-2'>
+      <div className='flex bg-white border shadow-md w-64 h-24 rounded-xl mx-0 my-2'>
         <div className='mx-2 my-1 w-20'>
           <Doughnut data={data} plugins={plugins} />
         </div>

@@ -4,7 +4,7 @@ import PendingIcon from "../img/PendingIcon.png";
 const Pending = () => {
   return (
     <div className='w-60'>
-      <div className=' px-1 h-28 rounded-xl bg-white border border-[#e6e3e3] border-spacing-8'>
+      <div className=' px-1 h-28 rounded-xl bg-white border border-[#e6e3e3] border-spacing-8 shadow-md'>
         <div className='mt-3'> 
         <label className='text-robot text-base font-semibold px-3'>Pending For Approval</label>
         </div>
