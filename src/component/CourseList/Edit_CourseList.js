@@ -11,7 +11,7 @@ const Edit_CourseList = () => {
 
 
   return (
-    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} ${marginTop}`}>      
+    <div className={`p-8 transition-all duration-300 ${marginLeft} ${marginTop}`}>      
       {/* Form Content */}
       <div className="bg-white p-6 rounded-lg shadow-md">
         

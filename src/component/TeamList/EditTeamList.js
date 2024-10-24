@@ -3,15 +3,12 @@ import { useSelector } from 'react-redux';
 
 const EditTeamList = () => {
   const isOpen = useSelector((state) => state.sidebar.isOpen); // Get sidebar state from Redux
-
   // Set the dynamic margin based on the sidebar's state
   const marginLeft = isOpen ? 'ml-52' : 'ml-12';
-
   const marginTop=isOpen ? "mt-[-36.8rem]":"mt-[-36rem]";
 
-
   return (
-    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} ${marginTop}`}>      
+    <div className={`p-8 transition-all duration-300 ${marginLeft} ${marginTop}`}>      
       {/* Form Content */}
       <div className="bg-white p-6 rounded-lg shadow-md">
         

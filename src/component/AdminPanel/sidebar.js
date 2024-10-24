@@ -106,7 +106,7 @@ const Sidebar = () => {
 
       {/* Branch List Link */}
       <Link
-        to="/branch"
+        to="/branch_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Branch List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Branch List', 'Add Admission', 'Branch List')}
       >
@@ -116,7 +116,7 @@ const Sidebar = () => {
 
       {/* City List Link */}
       <Link
-        to="/city"
+        to="/city_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'City List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('City List', 'Add Admission', 'City List')}
       >
@@ -133,7 +133,7 @@ const Sidebar = () => {
 
       {/* WhatsApp Link */}
       <Link
-        to="/whatsapp"
+        to="/whatsapp_rule"
         className={`${itemClass} ${hoverClass} ${activeSection === 'WhatsApp' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('WhatsApp', 'Add Admission', 'WhatsApp')}
       >
@@ -143,7 +143,7 @@ const Sidebar = () => {
 
       {/* Mail List Link */}
       <Link
-        to="/mail"
+        to="/mail_list"
         className={`${itemClass} ${hoverClass} ${activeSection === 'Mail List' ? 'bg-gray-300' : ''}`}
         onClick={() => handleSetAdmissionTitles('Mail List', 'Add Admission', 'Mail List')}
       >

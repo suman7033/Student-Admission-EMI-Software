@@ -22,6 +22,15 @@ import AddCourseForm from "./component/CourseList/AddCourseForm";
 import SourceList from "./component/SourceList/SourceList";
 import EditSourceList from "./component/SourceList/EditSourceList";
 import AddSourceForm from "./component/SourceList/AddSourceForm";
+import BranchList from "./component/BranchList/BranchList";
+import EditBranchList from "./component/BranchList/EditBranchList";
+import BranchListForm from "./component/BranchList/BranchListForm";
+import CityList from "./component/CityList/CityList";
+import EditCityList from "./component/CityList/EditCityList";
+import AddCityList from "./component/CityList/AddCityList";
+import WhatsappRule from "./component/Whatsapp/WhatsappRule";
+import WhatsappForm from "./component/Whatsapp/WhatsappForm";
+import WhatsappList from "./component/Whatsapp/WhatsappList";
 
 function App() {
    
@@ -48,6 +57,17 @@ function App() {
         <Route path='/source_list' element={<SourceList/>}/>
         <Route path='/edit_source_list' element={<EditSourceList/>}/>
         <Route path='/add_source_list' element={<AddSourceForm/>}/>
+        <Route path="/branch_list" element={<BranchList/>}/>
+        <Route path="/edit_branch_list" element={<EditBranchList/>}/>
+        <Route path="/add_branch_list" element={<BranchListForm/>}/>
+        <Route path="/city_list" element={<CityList/>}/>
+        <Route path="/edit_city_list" element={<EditCityList/>}/>
+        <Route path="/add_city_list" element={<AddCityList/>}/>
+        <Route path="/whatsapp_rule" element={<WhatsappRule/>}/>
+        <Route path="/whatsapp_form" element={<WhatsappForm/>}/>
+        <Route path="/whatsapp_list" element={<WhatsappList/>}/>
+        {/* <Route path="/mail_list" element={}/>
+        <Route path="/mail_form" element={}/> */}
        </Routes>
   </div>
   );

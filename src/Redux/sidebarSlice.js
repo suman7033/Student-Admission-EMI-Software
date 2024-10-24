@@ -7,7 +7,7 @@ const sidebarSlice = createSlice({
     isOpen: true,  // Sidebar is open by default
     admissionFormTitle: '',  // Add field for AdmissionForm title
     addNewAdmissionTitle: '',  // Add field for AddNewAdmission title
-    activeSection: 'Dashboard'  // Track the active section, default is 'Dashboard'
+    activeSection: ''  // Track the active section, default is 'Dashboard'
   },
   reducers: {
     toggleSidebar: (state) => {

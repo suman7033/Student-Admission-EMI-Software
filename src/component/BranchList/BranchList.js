@@ -7,7 +7,7 @@ import ToggleOffIcon from '@mui/icons-material/ToggleOff'; // Toggle for status 
 import { Link } from 'react-router-dom';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-const SourceList = () => {
+const BranchList = () => {
   const isOpen = useSelector((state) => state.sidebar.isOpen); // Sidebar state
   const marginLeft = isOpen ? 'ml-52' : 'ml-12'; // Adjust content margin based on sidebar state
   const marginTop=isOpen ? "mt-[-36.8rem]":"mt-[-36rem]";
@@ -16,13 +16,13 @@ const SourceList = () => {
     <div className={`pt-8 px-6 shadow-md transition-all duration-300 ${marginLeft} ${marginTop}`}>
       {/* Team List Header */}
       <div className="h-20 bg-[#637D9B80] flex justify-between items-center">
-        <h1 className="text-xl pl-4 text-white font-semibold">Source List</h1>
+        <h1 className="text-xl pl-4 text-white font-semibold">Branch List</h1>
         <div className='w-60 flex ml-[35rem] border border-[#d6d3d3] rounded-lg'>
           <input type='search' placeholder='Search' className='w-52 border-none rounded-lg p-2 focus:outline-none'/>
           <SearchIcon className='mt-1 pr-1' fontSize='large' />
         </div>
-        <Link to="/add_source_list">
-        <button className="mr-5 bg-[#637D9B] text-white px-4 py-2 rounded-md">Add Source</button>
+        <Link to="/add_branch_list">
+        <button className="mr-5 bg-[#637D9B] text-white px-4 py-2 rounded-md">Add Branch</button>
         </Link>
       </div>
 
@@ -33,8 +33,7 @@ const SourceList = () => {
             <tr>
               <th className="px-2 py-2">#</th>
               <th className="px-2 py-2">Date Created</th>
-              <th className="px-2 py-2">Source Name</th>
-              <th className="px-2 py-2">Description</th>
+              <th className="px-2 py-2">City Name</th>
               <th className="px-2 py-2">Action</th>
             </tr>
           </thead>
@@ -43,10 +42,9 @@ const SourceList = () => {
             <tr className="text-center border-t">
               <td className="px-4 py-2">1</td>
               <td className="px-4 py-2">07/11/2022</td>
-              <td className="px-4 py-2">FB-MA</td>
-              <td className="px-4 py-2">Facebook</td>
+              <td className="px-4 py-2">Delhi-NCR</td>
               <td className="px-4 py-5 flex justify-center">
-                <Link to='/edit_source_list'>
+                <Link to='/edit_branch_list'>
                 <EditIcon className="bg-white cursor-pointer mx-2" />
                 </Link>
                 <Link>
@@ -62,4 +60,4 @@ const SourceList = () => {
   );
 };
 
-export default SourceList;
+export default BranchList;

@@ -6,9 +6,11 @@ const AdmissionForm = () => {
 
   // Set the dynamic margin based on the sidebar's state
   const marginLeft = isOpen ? 'ml-52' : 'ml-12';
+  const marginTop=isOpen ? "mt-[-37.2rem]":"mt-[-36.5rem]";
+
 
   return (
-    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} mt-[-37.5rem]`}>
+    <div className={`p-8 shadow-md transition-all duration-300 ${marginLeft} ${marginTop}`}>
       
       {/* Form Content */}
       <div className="bg-white p-3 mb-3 rounded-lg shadow-md">
